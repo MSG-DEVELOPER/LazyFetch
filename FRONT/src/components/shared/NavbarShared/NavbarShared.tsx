@@ -1,12 +1,15 @@
+import { NavbarContainer, Spacer, Title, RightSection, LogoButton } from "./NavbarShared.style";
 
-function NavbarShared() {
+export function NavbarShared() {
   return (
-    <div>
-        NavbarShared
-        <img src="/logoLazyFetch.svg" alt="" />
-        
-    </div>
-  )
+    <NavbarContainer>
+      <Spacer /> 
+      <Title>BIENVENIDO A LAZYFETCH®</Title>
+      <RightSection>
+        <LogoButton>
+          <img src="/logoLazyFetch.svg" alt="Botón" />
+        </LogoButton>
+      </RightSection>
+    </NavbarContainer>
+  );
 }
-
-export default NavbarShared

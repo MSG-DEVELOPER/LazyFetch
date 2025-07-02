@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage/HomePage'
-import NavbarShared from './components/shared/NavbarShared/NavbarShared'
+import { NavbarShared } from './components/shared/NavbarShared/NavbarShared'
 import './App.css'
 
 function App() {
