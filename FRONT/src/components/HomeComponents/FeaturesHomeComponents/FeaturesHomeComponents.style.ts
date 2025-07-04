@@ -6,8 +6,7 @@ export const DivStyle = styled.div`
   flex-direction: column;
   gap: 1.5rem;
   width: 40vw;
-
-   > div {
+  > div {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -15,7 +14,7 @@ export const DivStyle = styled.div`
     color: ${colors.secondary};
     padding: 1.25rem;
     border-radius: 0.75rem;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     img {
       width: 2.5rem;
@@ -34,14 +33,9 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       color: ${colors.secondary};
     }
 
-     &:hover {
+    &:hover {
       transform: translateY(-0.375rem);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     }
   }
-
-
-
-
-
 `;

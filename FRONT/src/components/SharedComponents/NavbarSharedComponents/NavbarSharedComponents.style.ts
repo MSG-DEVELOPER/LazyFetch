@@ -28,7 +28,7 @@ export const NavbarContainer = styled.header`
       font-weight: 700;
 
       .highlight {
-      color: gold; /* o usa colors.accent o crea un color dorado en tu paleta */
+      color: gold; 
       font-weight: 900;
     }
     }
