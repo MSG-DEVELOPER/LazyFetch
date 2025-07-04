@@ -16,8 +16,8 @@ export const DivStyle = styled.div`
     color: ${colors.secondary};
     padding: 1.25rem;
     border-radius: 0.75rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
     img {
       width: 2.5rem;
       height: 2.5rem;
@@ -33,6 +33,11 @@ export const DivStyle = styled.div`
       font-size: 1rem;
       margin: 0.25rem 0 0;
       color: ${colors.secondary};
+    }
+
+     &:hover {
+      transform: translateY(-0.375rem);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
     }
   }
 
