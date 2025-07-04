@@ -1,19 +1,14 @@
-import { Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage/HomePage'
-import { NavbarShared } from './components/shared/NavbarShared/NavbarShared'
+import { NavbarSharedComponents } from './components/SharedComponents/NavbarSharedComponents/NavbarSharedComponents'
 import './App.css'
+import { AppRoutes } from './routes/AppRoutes'
 
 function App() {
  
 
   return (
     <>
-    <NavbarShared/>
-    <Routes>
-
-      <Route path="/" element={<HomePage/>} />
-
-    </Routes>
+    <NavbarSharedComponents/>
+    <AppRoutes/>
     </>
   )
 }

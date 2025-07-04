@@ -1,12 +1,12 @@
-import GIFHome from "../../components/Home/GIFHome/GIFHome"
-import FeaturesHome from "../../components/Home/FeaturesHome/FeaturesHome"
+import GIFHomeComponents from "../../components/HomeComponents/GIFHomeComponents/GIFHomeComponents"
+import FeaturesHome from "../../components/HomeComponents/FeaturesHomeComponents/FeaturesHomeComponents"
 import { Div } from "./HomePage.style"
 
 
 function HomePage() {
   return (
     <Div>
-       <GIFHome/>
+       <GIFHomeComponents/>
        <FeaturesHome/>
        
 

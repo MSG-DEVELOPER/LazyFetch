@@ -1,0 +1,43 @@
+import styled from "styled-components";
+import { colors } from "../../../styles/colors";
+
+export const DivStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: dotted 2px pink;
+  width: 40vw;
+
+   > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: ${colors.accent};
+    color: ${colors.secondary};
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      flex-shrink: 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0.25rem 0 0;
+      color: ${colors.secondary};
+    }
+  }
+
+
+
+
+
+`;
