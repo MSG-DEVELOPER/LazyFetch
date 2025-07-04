@@ -17,6 +17,8 @@ export const NavbarContainer = styled.header`
   color: ${colors.secondary};
   overflow-x: hidden;
 
+  
+
   > div:first-child {
     flex: 1;
     text-align: center;
@@ -24,6 +26,11 @@ export const NavbarContainer = styled.header`
     h1 {
       font-size: 1.875rem;
       font-weight: 700;
+
+      .highlight {
+      color: gold; /* o usa colors.accent o crea un color dorado en tu paleta */
+      font-weight: 900;
+    }
     }
   }
 

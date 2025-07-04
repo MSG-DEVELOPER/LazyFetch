@@ -4,7 +4,7 @@ export function NavbarSharedComponents() {
   return (
     <NavbarContainer>
       <div>
-        <h1>WELCOME TO LAZYFETCH®</h1>
+        <h1>WELCOME TO <span className="highlight">LAZYFETCH®</span></h1>
       </div>
       <div>
         <button>
