@@ -14,6 +14,7 @@ export const SidebarContainer = styled.div<SidebarProps>`
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(50px);
   color: #fff;
+  border-radius: 15px;
 
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
   transform: ${({ $open }) => ($open ? "translateX(0)" : "translateX(100%)")};
