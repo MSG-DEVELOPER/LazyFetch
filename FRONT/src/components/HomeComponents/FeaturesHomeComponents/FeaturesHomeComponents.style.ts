@@ -8,7 +8,7 @@ export const DivStyle = styled.div`
   width: 40vw;
   > div {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     background-color: ${colors.accent};
     color: ${colors.secondary};
@@ -19,7 +19,8 @@ export const DivStyle = styled.div`
     img {
       width: 2.5rem;
       height: 2.5rem;
-      flex-shrink: 0;
+      flex-shrink: 2;
+      
     }
 
     h2 {
@@ -31,6 +32,7 @@ export const DivStyle = styled.div`
       font-size: 1rem;
       margin: 0.25rem 0 0;
       color: ${colors.secondary};
+      text-align: justify;
     }
 
     &:hover {
