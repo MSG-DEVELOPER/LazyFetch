@@ -1,12 +1,20 @@
 // NavbarSharedComponents.jsx
+import { useSidebar } from "../../../context/SidebarContext";
+import { useLocation } from "react-router-dom";
+
 import { NavbarContainer } from "./NavbarSharedComponents.style";
 
 export function NavbarSharedComponents() {
-  function handleLogin() {
-    alert("Login clicado");
-  }
+  const { toggleSidebar } = useSidebar();
+  const location = useLocation();
 
-  
+  function handleLogin() {
+    if (location.pathname === "/") {
+      toggleSidebar();
+    } else {
+      alert("Otra ruta, lógica diferente si quieres");
+    }
+  }
 
   return (
     <NavbarContainer>
@@ -24,7 +32,6 @@ export function NavbarSharedComponents() {
 
       <div className="right">
         <button onClick={handleLogin}>START</button>
-       
       </div>
     </NavbarContainer>
   );
