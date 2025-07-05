@@ -1,16 +1,17 @@
-import { NavbarSharedComponents } from './components/SharedComponents/NavbarSharedComponents/NavbarSharedComponents'
-import './App.css'
-import { AppRoutes } from './routes/AppRoutes'
+import { SidebarProvider } from "./context/SidebarContext";
+import { NavbarSharedComponents } from "./components/SharedComponents/NavbarSharedComponents/NavbarSharedComponents";
+import { AppRoutes } from "./routes/AppRoutes";
+import "./App.css";
 
 function App() {
- 
-
   return (
     <>
-    <NavbarSharedComponents/>
-    <AppRoutes/>
+      <SidebarProvider>
+        <NavbarSharedComponents />
+        <AppRoutes />
+      </SidebarProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
