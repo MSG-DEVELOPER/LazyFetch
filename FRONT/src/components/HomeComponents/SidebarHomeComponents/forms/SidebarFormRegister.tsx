@@ -1,21 +1,34 @@
-// src/components/SidebarFormRegister.tsx
 import { useState } from "react";
 import { FormWrapper } from "./SidebarForms.style";
 import { registerUser } from "../../../../../../BBDD/authFunctions";
+import ToastMessage from "../../../SharedComponents/ToastMessageSharedComponents/ToastMessageSharedComponents"
 
 function SidebarFormRegister() {
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
+  const [email, setEmail]       = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const [toast, setToast] = useState<{ type: "success" | "error"; message: string } | null>(null);
 
   async function handleRegister(e: React.FormEvent) {
     e.preventDefault();
+    setToast(null);
+
+    if (password !== confirmPassword) {
+      setToast({ type: "error", message: "Passwords do not match." });
+      return;
+    }
+
     try {
-      const uid = await registerUser(username, email, password);
-      console.log("User registered:", uid);
-      // Redirigir o mostrar el core
+      await registerUser(username, email, password);
+      setToast({ type: "success", message: "Account created successfully." });
+      setUsername("");
+      setEmail("");
+      setPassword("");
+      setConfirmPassword("");
     } catch (error: any) {
-      console.error("Register error:", error.message);
+      setToast({ type: "error", message: "Register error: " + error.message });
     }
   }
 
@@ -33,21 +46,39 @@ function SidebarFormRegister() {
           placeholder="Username"
           value={username}
           onChange={e => setUsername(e.target.value)}
+          required
         />
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={e => setEmail(e.target.value)}
+          required
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={e => setPassword(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          value={confirmPassword}
+          onChange={e => setConfirmPassword(e.target.value)}
+          required
         />
         <button type="submit">Register</button>
       </form>
+
+      {toast && (
+        <ToastMessage
+          type={toast.type}
+          message={toast.message}
+          onClose={() => setToast(null)}
+        />
+      )}
     </FormWrapper>
   );
 }

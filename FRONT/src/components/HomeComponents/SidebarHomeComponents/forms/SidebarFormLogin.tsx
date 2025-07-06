@@ -1,25 +1,27 @@
-// src/components/SidebarFormLogin.tsx
-import { useNavigate } from "react-router-dom"; // <-- importa esto
-
+import { useNavigate } from "react-router-dom"; 
 import { useState } from "react";
 import { FormWrapper } from "./SidebarForms.style";
 import { loginUser } from "../../../../../../BBDD/authFunctions";
+import ToastMessage from "../../../SharedComponents/ToastMessageSharedComponents/ToastMessageSharedComponents"
 
 function SidebarFormLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-    const navigate = useNavigate(); // <-- hook para navegar
-
+  const [toast, setToast] = useState<{ type: "success" | "error"; message: string } | null>(null);
+  const navigate = useNavigate(); 
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
+    setToast(null);
+
     try {
       const uid = await loginUser(email, password);
-      alert("Login exitoso, uid: " + uid);
-      // Aquí redirige a la página core de tu app, por ejemplo:
-       navigate("/core");
+      setToast({ type: "success", message: "Login successful" });
+      setTimeout(() => {
+        navigate("/core");
+      }, 1500);
     } catch (error: any) {
-      alert("Error al iniciar sesión: " + error.message);
+      setToast({ type: "error", message: "Login error: " + error.message });
     }
   }
 
@@ -43,6 +45,14 @@ function SidebarFormLogin() {
         />
         <button type="submit">Login</button>
       </form>
+
+      {toast && (
+        <ToastMessage
+          type={toast.type}
+          message={toast.message}
+          onClose={() => setToast(null)}
+        />
+      )}
     </FormWrapper>
   );
 }
