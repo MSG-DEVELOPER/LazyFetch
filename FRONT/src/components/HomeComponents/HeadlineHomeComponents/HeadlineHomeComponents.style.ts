@@ -23,7 +23,7 @@ export const HeadlineStyle = styled.div`
     font-weight: 800;
     color: ${colors.primary};
     letter-spacing: 0.05em;
-    animation: ${fadeInUp} 1s ease-out;
+    animation: ${fadeInUp} 2s ease-out;
   }
 
   @media (min-width: 768px) {
