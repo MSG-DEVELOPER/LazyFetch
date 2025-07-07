@@ -12,7 +12,7 @@ export function NavbarSharedComponents() {
     if (location.pathname === "/") {
       toggleSidebar();
     } else {
-      alert("Otra ruta, lógica diferente si quieres");
+      alert("debe deslogarte y cambiar la apariencia , NavbarShared linea 15");
     }
   }
 

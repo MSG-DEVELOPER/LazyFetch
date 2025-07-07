@@ -1,4 +1,4 @@
-import { FooterStyle } from "./FooterHomeComponents.style";
+import { FooterStyle } from "./FooterShardeComponents.style";
 
 function FooterHomeComponents() {
   return (
