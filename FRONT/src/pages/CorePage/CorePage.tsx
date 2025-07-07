@@ -1,10 +1,15 @@
-
+import { Container} from "./CorePage.style";
+import EndpointListComponents from "../../components/CoreComponents/EndpointListComponents/EndpointListComponents";
 function CorePage() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>🎉 Bienvenido al núcleo de tu librería</h1>
-      <p>¡Has iniciado sesión correctamente!</p>
-    </div>
+
+   
+    <Container>
+      
+        <EndpointListComponents />
+      
+
+    </Container>
   );
 }
 
