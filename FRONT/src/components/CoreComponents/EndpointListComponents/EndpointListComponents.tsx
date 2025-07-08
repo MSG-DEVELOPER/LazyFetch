@@ -23,6 +23,7 @@ function EndpointListComponents() {
       <Grid>
         {filteredEndpoints.map((endpoint) => (
           <CardEndpointListComponents
+           id={String(endpoint.id)} 
             key={endpoint.id}
             image={endpoint.image}
             baseUrl={endpoint.baseUrl}
