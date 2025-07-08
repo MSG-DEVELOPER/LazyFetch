@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { endpointsData } from "../../CoreComponents/CardEndpointListComponents/Card.data";
 import CardEndpointListComponents from "../../CoreComponents/CardEndpointListComponents/CardEndpointListComponents";
 
-function FunctionsUtilsComponents() {
+function SelectedUtilsComponents() {
   const { id } = useParams();
   const selectedCard = endpointsData.find((item) => String(item.id) === id);
 
@@ -12,10 +12,11 @@ function FunctionsUtilsComponents() {
 
   return (
     <div>
-      
+     
       <CardEndpointListComponents {...selectedCard} />
+    
     </div>
   );
 }
 
-export default FunctionsUtilsComponents;
+export default SelectedUtilsComponents;

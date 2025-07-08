@@ -1,5 +1,6 @@
-import FunctionsUtilsComponents from "../../components/UtilsComponents/FunctionsUtilsComponents/FunctionsUtilsComponents";
+import SelectedUtilsComponents from "../../components/UtilsComponents/SelectedUtilsComponents/SelectedUtilsComponents";
 import HeaderUtilsComponents from "../../components/UtilsComponents/HeaderUtilsComponents/HeaderUtilsComponents";
+import Engine from "../../components/UtilsComponents/Engine/Engine";
 import { Container } from "./UtilsPage.style";
 
 function UtilsPage() {
@@ -10,10 +11,11 @@ function UtilsPage() {
         <HeaderUtilsComponents/>
      <section style={{border:"solid 5px black"}}> 
          <div className="selected" style={{border:"5px solid yellow"}}> 
-             <FunctionsUtilsComponents/>
+             <SelectedUtilsComponents/>
          </div>
          <div style={{border:"5px solid yellow"}} className="utils">
-            aqui viene el quit de la cuestion
+           
+            <Engine/>
          </div>
      </section>
     
