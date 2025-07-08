@@ -7,5 +7,4 @@ export const Container = styled.div`
   margin: 0 auto;
   padding-top: 4rem;
   justify-content: space-between;
-  border: 5px dotted pink;
 `;
