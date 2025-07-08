@@ -1,83 +1,19 @@
-// export const endpointsData = [
-//  {
-//     id: 0,
-//     image: "/cards/chuck.jpg",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-
-//   {
-//     id: 1,
-//     image: "https://picsum.photos/300/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 2,
-//     image: "https://picsum.photos/200/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 3,
-//     image: "https://picsum.photos/300/100",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//    {
-//     id: 4,
-//     image: "https://picsum.photos/300/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 5,
-//     image: "https://picsum.photos/200/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 6,
-//     image: "https://picsum.photos/300/100",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-
-//    {
-//     id: 7,
-//     image: "https://picsum.photos/300/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 8,
-//     image: "https://picsum.photos/200/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 9,
-//     image: "https://picsum.photos/300/100",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//    {
-//     id: 10,
-//     image: "https://picsum.photos/300/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 11,
-//     image: "https://picsum.photos/200/140",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-//   {
-//     id: 12,
-//     image: "https://picsum.photos/300/100",
-//     baseUrl: "https://picsum.photos/300/140",
-//   },
-// ];
 
 export const endpointsData = [
+
+
+
+
   {
     id: 1,
     image: "/cards/chuck.jpg",
     baseUrl: "https://api.chucknorris.io",
     endpoint: "/jokes/random",
-    description: "You get a joke inspired in Chuck Norris:",
+    description: "You get a toke inspired in Chuck Norris:",
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+   
   },
   {
     id: 1,
@@ -88,6 +24,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: false,
     hasParams: false,
+   
   },
   {
     id: 1,
@@ -98,6 +35,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+   
   },
   {
     id: 1,
@@ -108,6 +46,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: false,
     hasParams: false,
+   
   },
   {
     id: 1,
