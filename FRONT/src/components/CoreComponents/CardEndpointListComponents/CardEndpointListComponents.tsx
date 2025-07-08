@@ -1,20 +1,8 @@
-// CardEndpointListComponents.tsx
-
-import {
-  Card,
-  CardImage,
-  CardContent,
-  ApiLink,
-  Endpoint,
-  Description,
-  Example,
-  CardIcons
-} from "./CardEndpointListComponents.style";
+import { Card } from "./CardEndpointListComponents.style";
 
 interface Props {
   image: string;
   baseUrl: string;
-  endpoint: string;
   description: string;
   exampleData: string;
   requiresApiKey: boolean;
@@ -24,7 +12,6 @@ interface Props {
 function CardEndpointListComponents({
   image,
   baseUrl,
-  endpoint,
   description,
   exampleData,
   requiresApiKey,
@@ -32,22 +19,37 @@ function CardEndpointListComponents({
 }: Props) {
   return (
     <Card>
-      <CardImage src={image} alt="Endpoint thumbnail" />
-      <CardContent>
-        <ApiLink href={baseUrl} target="_blank" rel="noopener noreferrer">
-          {baseUrl}
-        </ApiLink>
-        <Description>{description}</Description>
+      <a
+        href={baseUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link"
+      >
+        {baseUrl}
+      </a>
 
-        <Example>{exampleData}</Example>
-        <Endpoint>{baseUrl + endpoint}</Endpoint>
-        {(requiresApiKey || hasParams) && (
-          <CardIcons>
-            {requiresApiKey && <span title="Requires API Key">🔑</span>}
-            {hasParams && <span title="Has Parameters">📎</span>}
-          </CardIcons>
-        )}
-      </CardContent>
+      <img src={image} alt="Endpoint thumbnail" className="image" />
+
+      <div className="description-box">
+        <p className="description">
+          {description} {exampleData}
+        </p>
+      </div>
+
+      {(requiresApiKey || hasParams) && (
+        <div className="icons">
+          {requiresApiKey && (
+            <span className="icon" title="API key required">
+              🔑 API KEY
+            </span>
+          )}
+          {hasParams && (
+            <span className="icon" title="Params required">
+              📎 PARAMS
+            </span>
+          )}
+        </div>
+      )}
     </Card>
   );
 }
