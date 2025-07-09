@@ -15,14 +15,19 @@ function SidebarFormLogin() {
     setToast(null);
 
     try {
-      const uid = await loginUser(email, password);
+      await loginUser(email, password);
       setToast({ type: "success", message: "Login successful" });
       setTimeout(() => {
         navigate("/core");
       }, 1500);
-    } catch (error: any) {
-      setToast({ type: "error", message: "Login error: " + error.message });
-    }
+
+     } catch (error) {
+       if (error instanceof Error) {
+       setToast({ type: "error", message: "Login error: " + error.message });
+       } else {
+      setToast({ type: "error", message: "Login error: Unknow error occured "  });
+      }
+   }
   }
 
   return (
