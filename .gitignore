@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-BBDD/firebaseConfig.ts
+FRONT/.env
 
 
 # Editor directories and files
