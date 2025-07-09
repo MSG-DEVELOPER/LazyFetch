@@ -37,19 +37,18 @@ export const Card = styled.div`
   }
 
   .description-box {
-      padding: 12px;
-      background-color: ${colors.secondary};
-  border-radius: 8px;
-}
+    padding: 12px;
+    background-color: ${colors.secondary};
+    border-radius: 8px;
+  }
 
-.description {
-  margin: 0;
-  font-size: 0.95rem;
-  color: black;
-  white-space: pre-wrap;
-  word-break: break-word;
-}
-  
+  .description {
+    margin: 0;
+    font-size: 0.95rem;
+    color: black;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 
   .icons {
     display: flex;
@@ -72,4 +71,8 @@ export const Card = styled.div`
     cursor: pointer;
     white-space: nowrap;
   }
+
+ 
+    
+   
 `;
