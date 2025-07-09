@@ -134,7 +134,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
       }
     }
   }
-`;function pR(){const{toggleSidebar:r}=wE(),e=Zr();function n(){e.pathname==="/"?r():alert("debe deslogarte y cambiar la apariencia , NavbarShared linea 15")}return Z.jsxs(dR,{children:[Z.jsx("div",{className:"left",children:Z.jsx("button",{className:"icon-button",children:Z.jsx("img",{src:"/icon.svg",alt:"Botón"})})}),Z.jsx("div",{className:"center",children:Z.jsxs("h1",{children:["WELCOME TO ",Z.jsx("span",{className:"highlight",children:"LAZYFETCH®"})]})}),Z.jsx("div",{className:"right",children:Z.jsx("button",{onClick:n,children:"START"})})]})}const mR=At.div`
+`;function pR(){const{toggleSidebar:r}=wE(),e=Zr();function n(){e.pathname==="/"?r():alert("debe deslogarte y cambiar la apariencia , NavbarShared linea 15")}return Z.jsxs(dR,{children:[Z.jsx("div",{className:"left",children:Z.jsx("button",{className:"icon-button",children:Z.jsx("img",{src:"icon.svg",alt:"Botón"})})}),Z.jsx("div",{className:"center",children:Z.jsxs("h1",{children:["WELCOME TO ",Z.jsx("span",{className:"highlight",children:"LAZYFETCH®"})]})}),Z.jsx("div",{className:"right",children:Z.jsx("button",{onClick:n,children:"START"})})]})}const mR=At.div`
   width: 40vw;
   background-color: ${ht.secondary};
   padding: 2rem;
