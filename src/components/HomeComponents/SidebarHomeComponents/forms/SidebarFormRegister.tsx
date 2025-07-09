@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FormWrapper } from "./SidebarForms.style";
-import { registerUser } from "../../../../../../BBDD/authFunctions";
+import { registerUser } from "../../../../../BBDD/authFunctions";
 import ToastMessage from "../../../SharedComponents/ToastMessageSharedComponents/ToastMessageSharedComponents";
 
 function SidebarFormRegister() {
