@@ -1,6 +1,6 @@
 import SelectedUtilsComponents from "../../components/UtilsComponents/SelectedUtilsComponents/SelectedUtilsComponents";
 import HeaderUtilsComponents from "../../components/UtilsComponents/HeaderUtilsComponents/HeaderUtilsComponents";
-import Engine from "../../components/UtilsComponents/Engine/Engine";
+import TabsLenguajesEngine from "../../components/UtilsComponents/Engine/TabsLenguajesEngine/TabsLenguajesEngine";
 import { Container } from "./UtilsPage.style";
 
 function UtilsPage() {
@@ -15,7 +15,7 @@ function UtilsPage() {
          </div>
          <div style={{border:"5px solid yellow"}} className="utils">
            
-            <Engine/>
+            <TabsLenguajesEngine/>
          </div>
      </section>
     
