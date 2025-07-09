@@ -3608,4 +3608,4 @@ section{ //la chicha a la izq el div con el endpoint selected y a derecha utils
       opacity: 1;
     }
   }
-`;function zx(){return Z.jsxs(jx,{children:[Z.jsx("img",{src:"/icon.svg",alt:"Icon 1"}),Z.jsx("img",{src:"/githubIcon.svg",alt:"Icon 2"}),Z.jsx("img",{src:"/AESicon.svg",alt:"Icon 3"}),Z.jsx("img",{src:"/icon4.svg",alt:"Icon 4"})]})}function Bx(){return Z.jsx(Z.Fragment,{children:Z.jsxs(fw,{children:[Z.jsx(pR,{}),Z.jsx(Lx,{}),Z.jsx(zx,{})]})})}zS.createRoot(document.getElementById("root")).render(Z.jsx(Y.StrictMode,{children:Z.jsx(nw,{basename:"/LazyFetch/",children:Z.jsx(Bx,{})})}));
+`;function zx(){return Z.jsxs(jx,{children:[Z.jsx("img",{src:"icon.svg",alt:"Icon 1"}),Z.jsx("img",{src:"githubIcon.svg",alt:"Icon 2"}),Z.jsx("img",{src:"AESicon.svg",alt:"Icon 3"}),Z.jsx("img",{src:"icon4.svg",alt:"Icon 4"})]})}function Bx(){return Z.jsx(Z.Fragment,{children:Z.jsxs(fw,{children:[Z.jsx(pR,{}),Z.jsx(Lx,{}),Z.jsx(zx,{})]})})}zS.createRoot(document.getElementById("root")).render(Z.jsx(Y.StrictMode,{children:Z.jsx(nw,{basename:"/LazyFetch/",children:Z.jsx(Bx,{})})}));
