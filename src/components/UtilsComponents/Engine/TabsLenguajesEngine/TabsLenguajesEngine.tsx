@@ -25,17 +25,24 @@ function TabsLenguajesEngine() {
           React
         </button>
         <button
-          onClick={() => handleTabChange("tsx")}
-          className={activeTab === "cdn" ? "active" : ""}
+          onClick={() => handleTabChange("Typescript")}
+          className={activeTab === "Typescript" ? "active" : ""}
         >
-          CDN
+          Typescript
+        </button>
+          <button
+          onClick={() => handleTabChange("tsx")}
+          className={activeTab === "tsx" ? "active" : ""}
+        >
+          React + Typescript
         </button>
       </div>
 
       <div className="content">
         {activeTab === "js" && <p>Contenido para JavaScript</p>}
         {activeTab === "react" && <p>Contenido para React</p>}
-        {activeTab === "tsx" && <p>Contenido para TSX</p>}
+        {activeTab === "Typescript" && <p>Contenido para TS</p>}
+         {activeTab === "tsx" && <p>Contenido para TSx</p>}
       </div>
     </Wrapper>
   )
