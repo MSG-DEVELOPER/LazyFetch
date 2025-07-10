@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div `
 padding-top: 3.75rem;
 height: 100vh;
+padding-bottom: 40rem;
 
 
 .selected{
@@ -20,7 +21,6 @@ height: 100vh;
 section{ //la chicha a la izq el div con el endpoint selected y a derecha utils
     display: flex;
     justify-content: space-between;
-    height: 95%;
 }
 
 

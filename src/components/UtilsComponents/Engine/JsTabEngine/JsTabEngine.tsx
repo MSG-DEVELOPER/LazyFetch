@@ -1,16 +1,18 @@
 import MakeButtonJsTabEngine from "./MakeButtonJsTabEngine/MakeButtonJsTabEngine";
+import ScriptJsTabEngine from "./ScriptJsTabEngine/ScriptJsTabEngine";
+
 import { Container } from "./JsTabEngine.style";
 
 function JsTabEngine() {
   return (
     <Container >
-      <section >hola1</section>
+      <section ><ScriptJsTabEngine/></section>
       <section>
         
         <MakeButtonJsTabEngine/>
 
       </section>
-      <section >hola3</section>
+      <section >pendiente</section>
     </Container>
   );
 }

@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Wrapper } from "./MakeButtonJsTabEngine.style";
-import { PreviewButton } from "./MakeButtonJsTabEngine.style";
+import { Wrapper, PreviewButton, CopyButton } from "./MakeButtonJsTabEngine.style";
 
 function MakeButtonJsTabEngine() {
   const [text, setText] = useState("Click me");
   const [bgColor, setBgColor] = useState("#3498db");
   const [padding, setPadding] = useState("10px 20px");
+  const [copied, setCopied] = useState(false);
 
   const generatedCSS = `
     background-color: ${bgColor};
@@ -15,6 +15,12 @@ function MakeButtonJsTabEngine() {
     color: white;
     cursor: pointer;
   `;
+
+  function handleCopy() {
+    navigator.clipboard.writeText(generatedCSS);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
 
   return (
     <Wrapper>
@@ -55,6 +61,9 @@ function MakeButtonJsTabEngine() {
       <div className="right">
         <h3>Copy & paste your CSS</h3>
         <pre>{generatedCSS}</pre>
+        <CopyButton onClick={handleCopy}>
+          {copied ? "Copied!" : "Copy CSS"}
+        </CopyButton>
       </div>
     </Wrapper>
   );

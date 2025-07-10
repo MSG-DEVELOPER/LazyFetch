@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #222; /* ✅ fuerza el color de texto */
 
     input[type="text"],
     input[type="color"] {
@@ -49,6 +50,7 @@ export const Wrapper = styled.div`
     white-space: pre-wrap;
     border-radius: 6px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    color: black;
   }
 `;
 
@@ -62,3 +64,20 @@ export const PreviewButton = styled.button<{ $padding: string; $bgColor: string 
   width: fit-content;
   align-self: start;
 `;
+
+export const CopyButton = styled.button`
+  margin-top: 10px;
+  background-color: ${colors.primary};
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition:  0.4s;
+
+  &:hover {
+    background-color: ${colors.accent};
+    transform: scale(1.1);
+  }
+`;
+
