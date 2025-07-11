@@ -1,16 +1,52 @@
 const lazyFetch = (function () {
-  async function fetchChuck() {
+  const config = {
+    Chuck: {
+      url: "https://api.chucknorris.io/jokes/random",
+      path: "value"
+    },
+    Piropos: {
+      url: "https://piropos-api.onrender.com/piropo/random",
+      path: "data.0.data"
+    },
+    // más claves...
+  };
+
+  function extractByPath(obj, path) {
+    return path.split('.').reduce((acc, part) => acc?.[part], obj);
+  }
+
+  async function generic(key) {
+    const entry = config[key];
+    if (!entry) throw new Error(`No config for key: ${key}`);
+
     try {
-      const response = await fetch("https://api.chucknorris.io/jokes/random");
+      const response = await fetch(entry.url);
       const data = await response.json();
-      return data.value; // Devuelve solo el texto del chiste
+      return extractByPath(data, entry.path);
     } catch (error) {
-      console.error("Error en fetchChuck:", error);
+      console.error(`Error fetching ${key}:`, error);
       return null;
     }
   }
 
+  async function render(key, selector) {
+    const container = document.querySelector(selector);
+    if (!container) {
+      console.warn(`Selector "${selector}" no encontrado.`);
+      return;
+    }
+
+    const result = await generic(key);
+
+    if (result) {
+      container.innerText = result;
+    } else {
+      container.innerText = "⚠️ Algo salió mal...";
+    }
+  }
+
   return {
-    fetchChuck
+    generic,
+    render,
   };
 })();
