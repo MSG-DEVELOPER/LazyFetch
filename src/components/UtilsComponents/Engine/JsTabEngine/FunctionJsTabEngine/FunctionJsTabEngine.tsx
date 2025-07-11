@@ -7,7 +7,7 @@ function FunctionJsTabEngine() {
   const { id } = useParams();
   const selectedCard = endpointsData.find((item) => String(item.id) === id);
 
-  const [copiedIndex, setCopiedIndex] = useState(null);
+const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   if (!selectedCard) {
     return <p>❌ No se encontró el endpoint.</p>;
@@ -40,7 +40,7 @@ function FunctionJsTabEngine() {
 `.trim();
 
 
-  function handleCopy(code, index) {
+  function handleCopy(code:string, index:number) {
     navigator.clipboard.writeText(code);
     setCopiedIndex(index);
     setTimeout(() => setCopiedIndex(null), 2000);
