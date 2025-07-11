@@ -7,7 +7,7 @@ function UtilsPage() {
   
   return (
 
-    <Container style={{border:"5px dotted red"}}>
+    <Container style={{border:"10px dotted red"}}>
         <HeaderUtilsComponents/>
      <section style={{border:"solid 5px black"}}> 
          <div className="selected" style={{border:"5px solid yellow"}}> 

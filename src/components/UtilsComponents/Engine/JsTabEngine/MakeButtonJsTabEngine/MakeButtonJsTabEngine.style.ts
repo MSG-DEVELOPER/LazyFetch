@@ -67,7 +67,7 @@ export const PreviewButton = styled.button<{ $padding: string; $bgColor: string 
 
 export const CopyButton = styled.button`
   margin-top: 10px;
-  background-color: ${colors.primary};
+  background-color: ${colors.primarySoft};
   color: white;
   border: none;
   border-radius: 5px;
@@ -76,7 +76,7 @@ export const CopyButton = styled.button`
   transition:  0.4s;
 
   &:hover {
-    background-color: ${colors.accent};
+    background-color: ${colors.primary};
     transform: scale(1.1);
   }
 `;
