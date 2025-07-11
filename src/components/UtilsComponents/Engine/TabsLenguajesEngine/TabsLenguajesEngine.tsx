@@ -1,3 +1,4 @@
+import JsTabEngine from "../JsTabEngine/JsTabEngine"
 import  { useState } from "react"
 import { Wrapper } from "./TabsLenguajesEngine.style"
 
@@ -39,7 +40,7 @@ function TabsLenguajesEngine() {
       </div>
 
       <div className="content">
-        {activeTab === "js" && <p>Contenido para JavaScript</p>}
+        {activeTab === "js" && <JsTabEngine/>}
         {activeTab === "react" && <p>Contenido para React</p>}
         {activeTab === "Typescript" && <p>Contenido para TS</p>}
          {activeTab === "tsx" && <p>Contenido para TSx</p>}
