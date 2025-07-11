@@ -1,4 +1,6 @@
+import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { endpointsData } from "../../../../CoreComponents/CardEndpointListComponents/Card.data";
 import {
   Wrapper,
   PreviewButton,
@@ -6,6 +8,9 @@ import {
 } from "./MakeButtonJsTabEngine.style";
 
 function MakeButtonJsTabEngine() {
+  const { id } = useParams();
+  const selectedCard = endpointsData.find((item) => String(item.id) === id);
+
   const [text, setText] = useState("Click me");
   const [bgColor, setBgColor] = useState("#3498db");
   const [padding, setPadding] = useState("10px 20px");
@@ -14,6 +19,10 @@ function MakeButtonJsTabEngine() {
 
   const [buttonId, setButtonId] = useState("button-fetch");
   const [allowCustomId, setAllowCustomId] = useState(false);
+
+  if (!selectedCard) {
+    return <p>❌ No se encontró el endpoint.</p>;
+  }
 
   const generatedCSS = `
 #${buttonId} {
@@ -24,10 +33,10 @@ function MakeButtonJsTabEngine() {
   color: white;
   cursor: pointer;
 }
-`;
+`.trim();
 
-  // ✅ Ahora el botón tiene el onClick incluido correctamente
-  const generatedHTML = `<button id="${buttonId}" onclick="fetchChuckNorris()">${text}</button>`;
+  // ✅ Ahora el onclick llama directamente a lazyFetch.render()
+  const generatedHTML = `<button id="${buttonId}" onclick="lazyFetch.render('${selectedCard.key}', '#lazyfetch-result p')">${text}</button>`;
 
   function handleCopyCSS() {
     navigator.clipboard.writeText(generatedCSS);
@@ -86,8 +95,8 @@ function MakeButtonJsTabEngine() {
               onClick={toggleCustomId}
               title={
                 allowCustomId
-                  ? " ⚠WARNING!!  ID is unlocked.  Only change it if you're sure! ⚠"
-                  : " ⚠The ID has a default value. Only change it if you know what it is. ⚠"
+                  ? " ⚠️ WARNING!! ID is unlocked. Change it only if you're sure!"
+                  : " 🔒 ID is locked. Change it only if you know what you're doing."
               }
             >
               {allowCustomId ? (

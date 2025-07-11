@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
 
   h3 {
     margin-bottom: 0;

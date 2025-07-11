@@ -8,6 +8,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+    key:"Chuck"
   },
   {
     id: "2",
@@ -18,6 +19,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: false,
     hasParams: false,
+     key:"Chuck"
   },
   {
     id: "3",
@@ -28,6 +30,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+     key:"Pedo"
   },
   {
     id: "4",
@@ -38,6 +41,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: false,
     hasParams: false,
+     key:"Chuck"
   },
   {
     id: "5",
@@ -48,6 +52,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: true,
+     key:"Chuck"
   },
   {
     id: "6",
@@ -58,6 +63,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+     key:"Chuck"
   },
   {
     id: "7",
@@ -68,6 +74,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+     key:"Chuck"
   },
   {
     id: "8",
@@ -78,6 +85,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: false,
     hasParams: false,
+     key:"Chuck"
   },
   {
     id: "9",
@@ -88,6 +96,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: true,
+     key:"Chuck"
   },
   {
     id: "10",
@@ -98,6 +107,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: false,
     hasParams: true,
+     key:"Chuck"
   },
   {
     id: "11",
@@ -108,6 +118,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+     key:"Genio"
   },
   {
     id: "12",
@@ -118,6 +129,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: true,
+     key:"Chuck"
   },
   {
     id: "13",
@@ -128,6 +140,7 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: true,
     hasParams: false,
+     key:"Chuck"
   },
   {
     id: "14",
@@ -138,5 +151,6 @@ export const endpointsData = [
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
     requiresApiKey: false,
     hasParams: false,
+     key:"Chuck"
   },
 ];
