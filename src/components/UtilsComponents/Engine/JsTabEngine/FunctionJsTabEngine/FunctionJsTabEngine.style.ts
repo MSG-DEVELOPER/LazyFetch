@@ -1,0 +1,58 @@
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  background: #fdfdfd;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h3 {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .copied-message {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: 6px;
+    font-weight: 400;
+  }
+`;
+
+export const CodeBox = styled.div`
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #222;
+  position: relative;
+  white-space: pre-wrap;
+  word-break: break-word;
+
+  display: flex;
+  align-items: flex-start;
+
+  code {
+    flex: 1;
+  }
+`;
+
+export const CopyIcon = styled.span`
+  margin-left: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: #e0e0e0;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #ccc;
+  }
+`;
