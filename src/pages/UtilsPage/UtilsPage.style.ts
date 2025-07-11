@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div `
 padding-top: 3.75rem;
 height: 100vh;
-padding-bottom: 40rem;
+padding-bottom: 10rem;
 
 
 .selected{
