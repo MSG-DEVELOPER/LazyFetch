@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border: pink dotted 5px;
 
   .tabs {
     display: flex;
@@ -33,8 +34,8 @@ export const Wrapper = styled.div`
   }
 
   .content {
-    border: 1px solid #ddd;
-    background: #1e1e1e;
+   
+    background:white;
     padding: 1rem;
     border-radius: 6px;
     color:white;
