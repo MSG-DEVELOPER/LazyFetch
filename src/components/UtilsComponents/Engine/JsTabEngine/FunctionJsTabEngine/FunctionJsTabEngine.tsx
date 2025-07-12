@@ -14,11 +14,11 @@ function FunctionJsTabEngine() {
   }
 
   const htmlBlock = `
-<div id="lazyfetch-result">
+<div id="lazyfetch-result-${selectedCard.key}">
   <p></p>
 </div>
-
 `.trim();
+
 
   function handleCopy(code: string, index: number) {
     navigator.clipboard.writeText(code);
