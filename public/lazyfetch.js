@@ -4,9 +4,9 @@ const lazyFetch = (function () {
       url: "https://api.chucknorris.io/jokes/random",
       path: "value"
     },
-    Piropos: {
-      url: "https://piropos-api.onrender.com/piropo/random",
-      path: "data.0.data"
+    Advice: {
+      url: "https://api.adviceslip.com/advice",
+      path: "slip.advice"
     },
     // más claves...
   };

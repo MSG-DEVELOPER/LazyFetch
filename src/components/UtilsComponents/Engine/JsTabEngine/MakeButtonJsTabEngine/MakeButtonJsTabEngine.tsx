@@ -36,7 +36,7 @@ function MakeButtonJsTabEngine() {
 `.trim();
 
   // ✅ Ahora el onclick llama directamente a lazyFetch.render()
-  const generatedHTML = `<button id="${buttonId}" onclick="lazyFetch.render('${selectedCard.key}', '#lazyfetch-result p')">${text}</button>`;
+const generatedHTML = `<button id="${buttonId}" onclick="lazyFetch.render('${selectedCard.key}', '#lazyfetch-result-${selectedCard.key} p')">${text}</button>`;
 
   function handleCopyCSS() {
     navigator.clipboard.writeText(generatedCSS);
