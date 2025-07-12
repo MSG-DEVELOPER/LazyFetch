@@ -1,18 +1,26 @@
-// NavbarSharedComponents.jsx
+// NavbarSharedComponents.tsx
 import { useSidebar } from "../../../context/SidebarContext";
-import { useLocation } from "react-router-dom";
-
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAuthState } from "../../../../BBDD/useAuthState";
+import { logoutUser } from "../../../../BBDD/auth";
 import { NavbarContainer } from "./NavbarSharedComponents.style";
 
 export function NavbarSharedComponents() {
   const { toggleSidebar } = useSidebar();
   const location = useLocation();
-
-  function handleLogin() {
-    if (location.pathname === "/") {
-      toggleSidebar();
+  const navigate = useNavigate();
+  const [user] = useAuthState();
+  
+  async function handleLogin() {
+    if (user) {
+      await logoutUser();
+      navigate("/");
     } else {
-      alert("debe deslogarte y cambiar la apariencia , NavbarShared linea 15");
+      if (location.pathname === "/") {
+        toggleSidebar();
+      } else {
+        navigate("/");
+      }
     }
   }
 
@@ -31,7 +39,9 @@ export function NavbarSharedComponents() {
       </div>
 
       <div className="right">
-        <button onClick={handleLogin}>START</button>
+        <button onClick={handleLogin}>
+          {user ? "LOGOUT" : "START"}
+        </button>
       </div>
     </NavbarContainer>
   );

@@ -1,5 +1,3 @@
-// GIFHomeComponents.style.js
-
 import styled from "styled-components";
 import { colors } from "../../../styles/colors";
 
@@ -41,18 +39,18 @@ export const ContentWrapper = styled.div`
 
   button {
     margin-top: 1rem;
-    padding: 0.75rem 2rem;
-    background-color: black;
-    color: ${colors.secondary};
+    padding: 0.625rem 1.125rem;
+    background-color: #007acc;
+    color: white;
     border: none;
     border-radius: 0.5rem;
     font-weight: bold;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: all 0.2s ease;
 
     &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      background-color: #005fa3;
     }
   }
 `;
