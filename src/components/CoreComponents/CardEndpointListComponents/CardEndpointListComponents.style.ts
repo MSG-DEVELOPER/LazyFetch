@@ -46,8 +46,12 @@ export const Card = styled.div`
     margin: 0;
     font-size: 0.95rem;
     color: black;
-    white-space: pre-wrap;
     word-break: break-word;
+
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   }
 
   .icons {
