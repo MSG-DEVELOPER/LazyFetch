@@ -153,4 +153,16 @@ export const endpointsData = [
     hasParams: false,
      key:"Chuck"
   },
+  {
+  id: "15",
+  image: "/cards/advice.jpg", // Lo buscas tú
+  baseUrl: "https://api.adviceslip.com",
+  endpoint: "/advice",
+  description: "Get an english random general purpose advice. Good vives and funny : ",
+  exampleData: `"If you don't want something to be public, don't post it on the Internet."`,
+  requiresApiKey: false,
+  hasParams: false,
+  key: "Advice"
+}
+
 ];
