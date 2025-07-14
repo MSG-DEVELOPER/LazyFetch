@@ -37,10 +37,24 @@ export const ContentWrapper = styled.div`
     border-radius: 0.5rem;
   }
 
+  div{
+    display: flex;
+    flex-direction: column;
+    
+     hr {
+        border: none;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 1px 1px 5px;
+      margin: 2rem 0;
+    }
+  }
+
   button {
     margin-top: 1rem;
     padding: 0.625rem 1.125rem;
-    background-color: #007acc;
+    background-color: ${colors.primarySoft};
+    align-self: center;
+
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -50,7 +64,7 @@ export const ContentWrapper = styled.div`
     transition: all 0.2s ease;
 
     &:hover {
-      background-color: #005fa3;
+      background-color: ${colors.primary};
     }
   }
 `;

@@ -15,7 +15,7 @@ export const ToastWrapper = styled.div<{ type: string }>`
   align-items: center;
   gap: 10px;
   background-color: ${(props) =>
-    props.type === "success" ? "rgba(40, 167, 69, 0.65)" : "rgba(220, 53, 69, 0.65)"};
+    props.type === "success" ? "rgba(40, 167, 69, 1)" : "rgba(220, 53, 69, 1)"};
   animation: fadeInOut 4s forwards;
   z-index: 9999;
 

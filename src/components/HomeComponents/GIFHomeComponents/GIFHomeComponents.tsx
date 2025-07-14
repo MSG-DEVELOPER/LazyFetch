@@ -1,4 +1,5 @@
 import { DivStyle, ContentWrapper } from "./GIFHomeComponents.style";
+//import DemoGifHomeComponents from "./DemoGifHomeComponents/DemoGifHomeComponents";
 
 function GIFHomeComponents() {
   const handleDownload = () => {
@@ -42,7 +43,14 @@ function GIFHomeComponents() {
       </h2>
       <ContentWrapper>
         <img src="/GifHome.gif" alt="Demo gif" />
-        <button onClick={handleDownload}>📄 Get file to test</button>
+        {/* <DemoGifHomeComponents/> */}
+       
+        <div>
+          <hr />
+          {" "}
+          <h3>DOWNLOAD AND PASTE ON YOUR BROWSER TO  <span className="highligth">TEST</span> </h3>
+          <button onClick={handleDownload}>📄 File with code</button>
+        </div>
       </ContentWrapper>
     </DivStyle>
   );

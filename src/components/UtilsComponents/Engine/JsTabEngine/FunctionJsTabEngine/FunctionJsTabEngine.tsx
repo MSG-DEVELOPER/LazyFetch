@@ -35,7 +35,7 @@ function FunctionJsTabEngine() {
         <CopyIcon onClick={() => handleCopy(htmlBlock, 0)}>📋</CopyIcon>
       </CodeBox>
       {copiedIndex === 0 && (
-        <p className="copied-message">📋 Copied to clipboard!</p>
+        <p className="copied-message">Copied!</p>
       )}
     </Wrapper>
   );

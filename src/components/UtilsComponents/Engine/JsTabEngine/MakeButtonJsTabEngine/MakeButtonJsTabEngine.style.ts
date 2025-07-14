@@ -12,10 +12,10 @@ export const Wrapper = styled.div`
     width: 45%;
   }
 
-  h3 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+ h3 {
     color: ${colors.primary};
+    font-size: 1.3rem;
+    margin: 0 0 12px 0; 
   }
 
   form {

@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   h3 {
     color: ${colors.primary};
     font-size: 1.3rem;
-    margin: 0 0 12px 0; /* margen abajo para separar del recuadro */
+    margin: 0 0 12px 0; 
   }
 
   .copied-message {
@@ -29,7 +29,7 @@ export const CopyBox = styled.div`
   font-family: monospace;
   font-size: 16px;
   color: #222;
-  cursor: pointer;
+ 
 
   display: flex;
   align-items: center;
@@ -38,12 +38,9 @@ export const CopyBox = styled.div`
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   user-select: none;
 
-  width: 100%; /* ocupa todo el ancho posible */
+  width: 100%;
 
-  &:hover {
-    background:${colors.accent};
-  }
-
+  
   code {
     user-select: text;
     overflow-wrap: anywhere;
@@ -56,4 +53,5 @@ export const CopyIcon = styled.span`
   font-size: 20px;
   user-select: none;
   flex-shrink: 0;
+  cursor: pointer;
 `;
