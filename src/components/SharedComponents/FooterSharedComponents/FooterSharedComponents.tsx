@@ -6,7 +6,7 @@ function FooterHomeComponents() {
       <img src="/icon.svg" alt="Icon 1" />
       <img src="/githubIcon.svg" alt="Icon 2" />
       <img src="/AESicon.svg" alt="Icon 3" />
-      <img src="/icon4.svg" alt="Icon 4" />
+      <img src="/license.svg" alt="Icon 4" />
     </FooterStyle>
   );
 }

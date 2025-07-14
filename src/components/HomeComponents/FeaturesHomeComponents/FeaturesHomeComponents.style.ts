@@ -10,8 +10,8 @@ export const DivStyle = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: ${colors.accent};
-    color: ${colors.secondary};
+    background-color: ${colors.secondary};
+    color: ${colors.primary};
     padding: 1.25rem;
     border-radius: 0.75rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@ export const DivStyle = styled.div`
     p {
       font-size: 1rem;
       margin: 0.25rem 0 0;
-      color: ${colors.secondary};
+      color: ${colors.primary};
       text-align: justify;
     }
 

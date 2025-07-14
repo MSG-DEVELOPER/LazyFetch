@@ -15,9 +15,9 @@ function ScriptJsTabEngine() {
   return (
     <Wrapper>
       <h3>Copy & paste to link the library</h3>
-      <CopyBox onClick={handleCopy} title="Click to copy">
+      <CopyBox title="Click to copy">
         <code>{scriptSrc}</code>
-        <CopyIcon>📋</CopyIcon>
+        <CopyIcon  onClick={handleCopy}>📋</CopyIcon>
       </CopyBox>
       {copied && <p className="copied-message">Copied!</p>}
     </Wrapper>
