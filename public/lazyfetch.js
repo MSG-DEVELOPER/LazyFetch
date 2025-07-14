@@ -8,6 +8,14 @@ const lazyFetch = (function () {
       url: "https://api.adviceslip.com/advice",
       path: "slip.advice"
     },
+    Cats:{
+       url:  "https://catfact.ninja/fact",
+       path: "fact"
+    },
+    Kanye:{
+      url: "https://api.kanye.rest/",
+      path:"quote"
+    }
     // más claves...
   };
 

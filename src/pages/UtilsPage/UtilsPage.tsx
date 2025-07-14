@@ -7,13 +7,13 @@ function UtilsPage() {
   
   return (
 
-    <Container style={{border:"10px dotted red"}}>
+    <Container >
         <HeaderUtilsComponents/>
-     <section style={{border:"solid 5px black"}}> 
-         <div className="selected" style={{border:"5px solid yellow"}}> 
+     <section > 
+         <div className="selected"> 
              <SelectedUtilsComponents/>
          </div>
-         <div style={{border:"5px solid yellow"}} className="utils">
+         <div  className="utils">
            
             <TabsLenguajesEngine/>
          </div>

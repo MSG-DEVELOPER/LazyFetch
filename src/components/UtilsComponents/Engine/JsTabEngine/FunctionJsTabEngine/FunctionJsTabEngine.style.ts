@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { colors } from "../../../../../styles/colors";
 export const Wrapper = styled.div`
   background: #fdfdfd;
   padding: 24px;
@@ -10,17 +10,17 @@ export const Wrapper = styled.div`
   gap: 16px;
   width: 100%;
 
-  h3 {
-    margin-bottom: 0;
-    font-size: 1.1rem;
-    color: #333;
-  }
-
+ h3 {
+     color: ${colors.primary};
+     font-size: 1.3rem;
+     margin: 0 0 12px 0; 
+   }
   .copied-message {
-    color: green;
-    font-size: 0.9rem;
-    margin-top: 6px;
-    font-weight: 400;
+  
+    margin-top: 8px;
+    color: black;
+    font-weight: 300;
+  
   }
 `;
 
