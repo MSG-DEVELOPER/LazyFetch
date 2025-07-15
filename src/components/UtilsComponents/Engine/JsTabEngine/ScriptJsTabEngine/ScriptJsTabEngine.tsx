@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Wrapper, CopyBox, CopyIcon } from "./ScriptJsTabEngine.style";
 
 function ScriptJsTabEngine() {
-  const scriptSrc = `<script src="https://lazy-fetch.vercel.app/lazyfetch.js"></script>`;
+  const scriptSrc = `<script src="https://lazy-fetch.vercel.app/lazyfetch.js" type="module"></script>`;
   const [copied, setCopied] = useState(false);
 
   function handleCopy() {
