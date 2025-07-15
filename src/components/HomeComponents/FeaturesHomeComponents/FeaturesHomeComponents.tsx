@@ -1,19 +1,23 @@
-import { DivStyle } from "./FeaturesHomeComponents.style";
+// FeaturesHomeComponents.jsx
+import { Section, Heading, DivStyle, Card } from "./FeaturesHomeComponents.style";
 import { featuresData } from "./featuresData";
 
 function FeaturesHomeComponents() {
   return (
-    <DivStyle>
-      {featuresData.map((feature) => (
-        <div key={feature.id}>
-          <img src={feature.icon} alt={feature.title} />
-          <div>
-            <h2>{feature.title}</h2>
-            <p>{feature.description}</p>
-          </div>
-        </div>
-      ))}
-    </DivStyle>
+    <Section >
+      <Heading>WHY LAZYFETCH <span className="highligth">?</span></Heading>
+      <DivStyle>
+        {featuresData.map((feature) => (
+          <Card key={feature.id}>
+            <img src={feature.icon} alt={feature.title} />
+            <div>
+              <h2>{feature.title}</h2>
+              <p>{feature.description}</p>
+            </div>
+          </Card>
+        ))}
+      </DivStyle>
+    </Section>
   );
 }
 

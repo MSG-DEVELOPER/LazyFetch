@@ -19,7 +19,7 @@ export const endpointsData = [
     exampleData: `"Artists are founders"`,
     requiresApiKey: false,
     hasParams: false,
-     key:"Kanye"
+    key:"Kanye"
   },
 
    {
@@ -49,14 +49,14 @@ export const endpointsData = [
 
   {
     id: "3",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "3. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
+    image: "/cards/numbers.jpg",
+    baseUrl: " http://numbersapi.com/random/trivia",
+    endpoint: "",
+    description: "You get a random curios fact about numbers!:",
+    exampleData: `"360000 is the number of words definitions in the New Oxford Dictionary of English."`,
+    requiresApiKey: false,
     hasParams: false,
-     key:"Pedo"
+     key:"Numbers"
   },
   {
     id: "4",

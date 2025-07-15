@@ -1,23 +1,31 @@
+// featuresData.js
 export const featuresData = [
   {
     id: 1,
     icon: "featuresIconEasy.png",
-    title: "Easy to Use",
+    title: "One‑Line Integration",
     description:
-      "One line of code and you have your One line of code and you have your One line of code and you have yourOne line of code and you have yourOne line of code and you have your",
+      "Say goodbye to boilerplate: one line of code to trigger an API call and immediately consume the returned data in your scripts or components.",
   },
   {
     id: 2,
     icon: "featuresIconAssembly.png",
-    title: "100% React",
+    title: "Auto Error Handling",
     description:
-      "Hooks designed to integrate seamlessly Hooks designed to integrate seamlessly Hooks designed to integrate seamlessly Hooks designed to integrate seamlessly Hooks designed to integrate seamlessly.",
+      "Built‑in error capture with friendly fallback messages. Simply request the data you need, and lazy‑fetch handles network errors and JSON parsing automatically.",
   },
   {
     id: 3,
     icon: "featuresIconPopular.png",
-    title: "Popular APIs",
+    title: "Popular APIs Ready",
     description:
-      "Instant access to the most used APIs. Instant access to the most used APIs. Instant access to the most used APIs. Instant access to the most used APIs. Instant access to the most used APIs. Instant access to the most used APIs.",
+      "Instant access to preconfigured endpoints for Cat Facts, Chuck Norris jokes, weather data, and more. Plug in your favorite APIs and start fetching in seconds.",
+  },
+  {
+    id: 4,
+    icon: "featuresIconScalable.png",
+    title: "Scalable & Extensible",
+    description:
+      "Easily register custom endpoints or override existing ones. Your configuration grows with your project, keeping API calls organized, maintainable and future‑proof.",
   },
 ];

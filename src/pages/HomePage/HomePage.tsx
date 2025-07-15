@@ -7,7 +7,7 @@ import { Div } from "./HomePage.style"
 
 function HomePage() {
   return (
-<>
+<div>
     <SidebarHomeComponents/>
 
     <HeadlineHomeComponent/>
@@ -15,7 +15,7 @@ function HomePage() {
        <GIFHomeComponents/>
        <FeaturesHomeComponents/>
     </Div>
-</>
+</div>
   )
 }
 

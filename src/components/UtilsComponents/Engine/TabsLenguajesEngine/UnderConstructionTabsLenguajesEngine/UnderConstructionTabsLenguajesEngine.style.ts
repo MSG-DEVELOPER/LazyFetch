@@ -1,10 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-height: 65rem;
-border-radius: 15px;
+  height: 65rem;
+  border-radius: 15px;
+  text-align: center;
+  padding: 2rem;
 
-img{
+  img {
     width: 100%;
-}
-`
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #555;
+  }
+`;
