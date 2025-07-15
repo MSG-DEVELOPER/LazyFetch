@@ -6,7 +6,7 @@ export const FooterStyle = styled.footer`
   height: 5rem;
   background-color: ${colors.primary};
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
 

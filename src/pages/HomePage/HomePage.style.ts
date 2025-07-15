@@ -8,5 +8,6 @@ export const Div = styled.main`
   padding-top: 5.75rem;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 4rem;
 `;
 

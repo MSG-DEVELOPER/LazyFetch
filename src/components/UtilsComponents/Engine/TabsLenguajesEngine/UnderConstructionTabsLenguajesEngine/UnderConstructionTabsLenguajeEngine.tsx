@@ -1,15 +1,12 @@
-import { Container } from "./UnderConstructionTabsLenguajesEngine.style"
+import { Container } from "./UnderConstructionTabsLenguajesEngine.style";
+
 function UnderConstructionTabsLenguajeEngine() {
   return (
-    <Container >
-        
-       <img src="/working.jpg" alt="" />
-    
-    
-    
-    
+    <Container>
+      <img src="/underConstruction.svg" alt="Under construction" />
+      <p>Sorry, this section is under construction</p>
     </Container>
-  )
+  );
 }
 
-export default UnderConstructionTabsLenguajeEngine
+export default UnderConstructionTabsLenguajeEngine;

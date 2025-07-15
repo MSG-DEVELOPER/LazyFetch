@@ -58,7 +58,6 @@ export const Card = styled.div`
     display: flex;
     gap: 8px;
     margin-top: 4px;
-    flex-wrap: wrap;
   }
 
   .icon {
