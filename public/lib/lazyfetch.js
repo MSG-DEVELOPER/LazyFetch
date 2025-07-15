@@ -1,6 +1,6 @@
-import {config} from "./libTranslator";
+import {config} from "./libTranslator.js";
 
-const lazyFetch = (function () {
+window.lazyFetch = (function () {
   
   function extractByPath(obj, path) {
     return path.split(".").reduce((acc, part) => acc?.[part], obj);
