@@ -2,25 +2,28 @@ const lazyFetch = (function () {
   const config = {
     Chuck: {
       url: "https://api.chucknorris.io/jokes/random",
-      path: "value"
+      path: "value",
     },
     Advice: {
       url: "https://api.adviceslip.com/advice",
-      path: "slip.advice"
+      path: "slip.advice",
     },
-    Cats:{
-       url:  "https://catfact.ninja/fact",
-       path: "fact"
+    Cats: {
+      url: "https://catfact.ninja/fact",
+      path: "fact",
     },
-    Kanye:{
+    Kanye: {
       url: "https://api.kanye.rest/",
-      path:"quote"
-    }
-    // más claves...
+      path: "quote",
+    },
+    Numbers: {
+      url: "http://numbersapi.com/random/trivia",
+      path: "",
+    },
   };
 
   function extractByPath(obj, path) {
-    return path.split('.').reduce((acc, part) => acc?.[part], obj);
+    return path.split(".").reduce((acc, part) => acc?.[part], obj);
   }
 
   async function generic(key) {

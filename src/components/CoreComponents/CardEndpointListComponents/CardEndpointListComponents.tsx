@@ -61,8 +61,8 @@ function CardEndpointListComponents({
         {showLazyfetchSelection && (
           <div
             className="icon"
-            title="Fastest Fetch, don't need config"
-           style={{backgroundColor:"#007ACC"}}
+            title="Fastest Fetch, don't need API Key or params"
+          style={{width:"60%" }}
           >
             ⭐ LAZYFETCH SELECTION
           </div>
