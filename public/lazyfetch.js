@@ -1,4 +1,4 @@
-import {config} from "./libTranslator";
+import {config} from "./libTranslator.js";
 
 const lazyFetch = (function () {
   
