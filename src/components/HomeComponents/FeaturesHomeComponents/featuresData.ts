@@ -9,7 +9,7 @@ export const featuresData = [
   },
   {
     id: 2,
-    icon: "featuresIconAssembly.png",
+    icon: "iconShield.png",
     title: "Auto Error Handling",
     description:
       "Built‑in error capture with friendly fallback messages. Simply request the data you need, and lazy‑fetch handles network errors and JSON parsing automatically.",
@@ -23,7 +23,7 @@ export const featuresData = [
   },
   {
     id: 4,
-    icon: "featuresIconScalable.png",
+    icon: "featuresIconAssembly.png",
     title: "Scalable & Extensible",
     description:
       "Easily register custom endpoints or override existing ones. Your configuration grows with your project, keeping API calls organized, maintainable and future‑proof.",
