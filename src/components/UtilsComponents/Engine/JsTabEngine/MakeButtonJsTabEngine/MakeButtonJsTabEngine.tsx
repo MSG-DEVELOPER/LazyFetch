@@ -12,7 +12,7 @@ function MakeButtonJsTabEngine() {
   const selectedCard = endpointsData.find((item) => String(item.id) === id);
 
   const [text, setText] = useState("Click me");
-  const [bgColor, setBgColor] = useState("red");
+  const [bgColor, setBgColor] = useState("#007ACC");
   const [padding, setPadding] = useState("10px 20px");
   const [copiedCSS, setCopiedCSS] = useState(false);
   const [copiedHTML, setCopiedHTML] = useState(false);
