@@ -59,7 +59,8 @@ export const Card = styled.div`
 
   h2 {
     font-size: 1.4rem;
-    margin: 0;
+    margin: 0 ;
+    padding-bottom: 1rem;
     color: ${colors.accent};
   }
 
@@ -67,7 +68,7 @@ export const Card = styled.div`
     font-size: 1rem;
     line-height: 1.5;
     margin: 0.25rem 0 0;
-    text-align: justify;
+    text-align:center;
   }
 
   &:hover {
