@@ -21,13 +21,17 @@ export const Container = styled.div`
   .tutorial-link {
     display: flex; /* 🔸 usa flex normal, no inline */
     align-items: center;
-    width: 30%;
+    width: 10%;
     justify-content: center;
-    background-color: ${colors.secondary};
-    padding: 0.8rem 1.5rem;
+    background-color: ${colors.secondarySoft};
+    padding: 0 1.5rem;
     border-radius: 999px;
     margin: 0 auto 5rem;
     gap: 0.8rem;
+
+     img{
+        width: 4rem;
+      }
 
     h3 {
       margin: 0;
@@ -41,6 +45,8 @@ export const Container = styled.div`
       font-size: 1.2rem;
       text-decoration: none;
       transition: transform 0.2s ease;
+
+     
     }
 
     a:hover {

@@ -8,9 +8,9 @@ function HeaderUtilsComponents() {
       </h2>
 
       <div className="tutorial-link">
-        <h3>We have made a 20s tutorial for you</h3>
-        <a href="https://example.com/tutorial" target="_blank" rel="noopener noreferrer">
-          🔗
+        <h3>Tutorial </h3>
+        <a href="https://www.youtube.com/watch?v=7mubSyoKh8Y" target="_blank" rel="noopener noreferrer">
+          <img src="/YT.png" alt="" />
         </a>
       </div>
     </Container>
