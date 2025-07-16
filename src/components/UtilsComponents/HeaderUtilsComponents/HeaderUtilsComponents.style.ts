@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { colors } from "../../../styles/colors";
 
 export const Container = styled.div`
+  padding-top: 4.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center; /* 🔸 centra texto por defecto */
 
-padding-top: 2.5rem;
-padding-bottom: 2.5rem;
-
- .highligth {
+  .highligth {
     color: ${colors.accent};
     font-weight: 900;
   }
@@ -16,7 +16,35 @@ padding-bottom: 2.5rem;
     color: black;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    text-align: center;
   }
 
-`
+  .tutorial-link {
+    display: flex; /* 🔸 usa flex normal, no inline */
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    background-color: ${colors.secondary};
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    margin: 0 auto 5rem;
+    gap: 0.8rem;
+
+    h3 {
+      margin: 0;
+      color: black;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    a {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    a:hover {
+      transform: scale(1.2);
+    }
+  }
+`;
