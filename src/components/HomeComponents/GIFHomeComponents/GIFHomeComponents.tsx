@@ -42,7 +42,7 @@ function GIFHomeComponents() {
         HOW IT <span className="highligth">WORKS</span>
       </h2>
       <ContentWrapper>
-        <img src="/GifHome.gif" alt="Demo gif" />
+        <img src="/GIF.gif" alt="Demo gif" />
         {/* <DemoGifHomeComponents/> */}
        
         <div>

@@ -12,7 +12,7 @@ function MakeButtonJsTabEngine() {
   const selectedCard = endpointsData.find((item) => String(item.id) === id);
 
   const [text, setText] = useState("Click me");
-  const [bgColor, setBgColor] = useState("red");
+  const [bgColor, setBgColor] = useState("#3498db");
   const [padding, setPadding] = useState("10px 20px");
   const [copiedCSS, setCopiedCSS] = useState(false);
   const [copiedHTML, setCopiedHTML] = useState(false);
@@ -58,7 +58,6 @@ const generatedHTML = `<button id="${buttonId}" onclick="lazyFetch.render('${sel
     <Wrapper>
       <div className="left">
         <h3>Style your button</h3>
-        <h2>This step is optional , if you don't want to style your button it will have a boring image</h2>
         <form>
           <label>Background Color:</label>
           <input
@@ -119,14 +118,13 @@ const generatedHTML = `<button id="${buttonId}" onclick="lazyFetch.render('${sel
 
       <div className="right">
         <h3>Copy & paste your CSS</h3>
-        <h2>Optional : Paste the style generated in your CSS stylesheet if you have styled the button </h2>
         <pre>{generatedCSS}</pre>
         <CopyButton onClick={handleCopyCSS}>
           {copiedCSS ? "Copied!" : "Copy CSS"}
         </CopyButton>
 
-        <h3 style={{ marginTop: "2rem" }}>2. Copy & paste your Button in the HTML</h3>
-                <pre>{generatedHTML}</pre>
+        <h3 style={{ marginTop: "2rem" }}>Copy & paste your styled Button in the HTML</h3>
+        <pre>{generatedHTML}</pre>
         <CopyButton onClick={handleCopyHTML}>
           {copiedHTML ? "Copied!" : "Copy HTML"}
         </CopyButton>
