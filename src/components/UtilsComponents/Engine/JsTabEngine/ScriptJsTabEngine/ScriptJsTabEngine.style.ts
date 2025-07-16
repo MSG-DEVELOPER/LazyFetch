@@ -15,6 +15,12 @@ export const Wrapper = styled.div`
     margin: 0 0 12px 0; 
   }
 
+  h2{
+     color: ${colors.primarySoft};
+    font-size: 1rem;
+    margin: 0 0 12px 0; 
+  }
+
   .copied-message {
     margin-top: 8px;
     color: black;

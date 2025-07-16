@@ -28,7 +28,7 @@ function FunctionJsTabEngine() {
 
   return (
     <Wrapper>
-      <h3>Paste this where you want to display the result</h3>
+      <h3>3. Paste this where you want to display the result</h3>
 
       <CodeBox>
         <code>{htmlBlock}</code>

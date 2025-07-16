@@ -18,6 +18,12 @@ export const Wrapper = styled.div`
     margin: 0 0 12px 0; 
   }
 
+   h2{
+     color: ${colors.accent};
+    font-size: 1rem;
+    margin: 0 0 12px 0; 
+  }
+
   form {
     display: flex;
     flex-direction: column;
