@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.2rem;
   width: 100%;
 
  h3 {

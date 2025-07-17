@@ -26,7 +26,7 @@ export const HeadlineStyle = styled.div`
     animation: ${fadeInUp} 2s ease-out;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 50vw) {
     h1 {
       font-size: 2.5rem;
     }

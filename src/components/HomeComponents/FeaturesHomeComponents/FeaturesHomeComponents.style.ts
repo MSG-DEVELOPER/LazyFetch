@@ -5,7 +5,7 @@ import { colors } from "../../../styles/colors";
 export const Section = styled.section`
   padding: 2rem 1rem;
   text-align: center;
-  max-width: 900px;
+  max-width: 40vw;
   margin: 0 auto;
   background-color: ${colors.primarySoft};
   border-radius: 1rem;

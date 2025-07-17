@@ -14,6 +14,6 @@ export const Container = styled.div`
   }
 
   section:nth-child(even) {
-    background-color: #f4f4f4; /* puedes ajustar el gris claro si quieres algo más suave */
+    background-color: #f4f4f4; 
   }
 `;
