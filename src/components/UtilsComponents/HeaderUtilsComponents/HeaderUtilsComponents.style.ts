@@ -4,7 +4,7 @@ import { colors } from "../../../styles/colors";
 export const Container = styled.div`
   padding-top: 4.5rem;
   padding-bottom: 2.5rem;
-  text-align: center; /* 🔸 centra texto por defecto */
+  text-align: center; 
 
   .highligth {
     color: ${colors.accent};
@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
 
   .tutorial-link {
-    display: flex; /* 🔸 usa flex normal, no inline */
+    display: flex; 
     align-items: center;
     width: 10%;
     justify-content: center;

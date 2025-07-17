@@ -26,7 +26,7 @@ export const SearchWrapper = styled.div`
     color: black;
     outline: none;
     font-size: 0.9rem;
-    width: 180px;
+    width: 12rem;
 
     &::placeholder {
       color: #ccc;

@@ -12,17 +12,17 @@ export const Wrapper = styled.div`
   h3 {
     color: ${colors.primary};
     font-size: 1.3rem;
-    margin: 0 0 12px 0; 
+    margin: 0 0 0.9rem 0; 
   }
 
   h2{
      color: ${colors.primarySoft};
     font-size: 1rem;
-    margin: 0 0 12px 0; 
+    margin: 0 0 0.9rem 0; 
   }
 
   .copied-message {
-    margin-top: 8px;
+    margin-top: 0.6rem;
     color: black;
     font-weight: 300;
   }
@@ -30,10 +30,10 @@ export const Wrapper = styled.div`
 
 export const CopyBox = styled.div`
   background: ${colors.secondarySoft};
-  border-radius: 6px;
-  padding: 12px 16px;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.2rem;
   font-family: monospace;
-  font-size: 16px;
+  font-size: 1rem;
   color: #222;
  
 
@@ -55,8 +55,8 @@ export const CopyBox = styled.div`
 `;
 
 export const CopyIcon = styled.span`
-  margin-left: 12px;
-  font-size: 20px;
+  margin-left: 0.9rem;
+  font-size: 1.3rem;
   user-select: none;
   flex-shrink: 0;
   cursor: pointer;

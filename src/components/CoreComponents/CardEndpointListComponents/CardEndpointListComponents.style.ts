@@ -30,7 +30,7 @@ export const Card = styled.div`
 
   .image {
     width: 100%;
-    height: 160px;
+    height: 12rem;
     object-fit: cover;
     border-radius: 10px;
     margin-top: 8px;

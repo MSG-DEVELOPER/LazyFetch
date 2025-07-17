@@ -25,8 +25,8 @@ export const IntroSection = styled.section`
 `;
 
 export const ProfileImage = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -56,7 +56,7 @@ export const ProjectsSection = styled.section`
 `;
 
 export const UnderConstructionImg = styled.img`
-  width: 200px;
+  width: 14rem;
   opacity: 0.75;
 `;
 
@@ -115,8 +115,8 @@ export const ContactButton = styled.a`
   transition: transform 0.3s ease;
 
   img {
-    width: 20px;
-    height: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
     object-fit: contain;
   }
 

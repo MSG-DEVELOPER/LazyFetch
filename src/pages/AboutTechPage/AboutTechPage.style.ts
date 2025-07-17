@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colors } from "../../styles/colors";
 export const Container = styled.main`
 
-  max-width: 800px;
+  max-width: 70%;
   margin: 0 auto;
   padding: 2rem 1rem;
 `;

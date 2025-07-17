@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding: 10px;
+  padding: 0.8rem;
 
   .left,
   .right {
@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
  h3 {
     color: ${colors.primary};
     font-size: 1.3rem;
-    margin: 0 0 12px 0; 
+    margin: 0 0 0.9rem 0; 
   }
 
    h2{
@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    color: #222; /* ✅ fuerza el color de texto */
+    color: #222; 
 
     input[type="text"],
     input[type="color"] {
