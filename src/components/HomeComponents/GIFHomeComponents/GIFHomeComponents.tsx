@@ -6,20 +6,24 @@ function GIFHomeComponents() {
     const htmlContent = `
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://lazy-fetch.vercel.app/lazyfetch.js"></script> 
-  </head>
-  <body>
-    <button onclick="lazyFetch.render('Advice', '#lazyfetch-result p')">
-      Click me
-    </button>
-    <div id="lazyfetch-result">
-      <p></p>
-    </div>
-  </body>
+</head>
+<body>
+    <button id="button-fetch" onclick="lazyFetch.render('Chuck', '#lazyfetch-result-Chuck p')">Click me</button>
+
+    <div id="lazyfetch-result-Chuck">
+  <p></p>
+</div>
+
+
+
+
+
+    <script src="https://lazy-fetch.vercel.app/lib/lazyfetch.js" type="module"></script>
+</body>
 </html>
     `.trim();
 
@@ -44,11 +48,13 @@ function GIFHomeComponents() {
       <ContentWrapper>
         <img src="/GIF.gif" alt="Demo gif" />
         {/* <DemoGifHomeComponents/> */}
-       
+
         <div>
-          <hr />
-          {" "}
-          <h3>DOWNLOAD AND PASTE ON YOUR BROWSER TO  <span className="highligth">TEST</span> </h3>
+          <hr />{" "}
+          <h3>
+            DOWNLOAD AND PASTE ON YOUR BROWSER TO{" "}
+            <span className="highligth">TEST</span>{" "}
+          </h3>
           <button onClick={handleDownload}>📄 File with code</button>
         </div>
       </ContentWrapper>

@@ -18,7 +18,7 @@ function DemoGifHomeComponents() {
   const codeString = `
 <script src="https://lazy-fetch.vercel.app/lib/lazyfetch.js" type="module"></script>
 
-<button onclick="lazyFetch.render('Advice', '#lazyfetch-result p')">Click me</button>
+<button onclick="lazyFetch.render('Chuck', '#lazyfetch-result p')">Click me</button>
 <div id="lazyfetch-result"><p></p></div>
   `.trim();
 
