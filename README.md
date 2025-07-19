@@ -12,8 +12,7 @@ With LazyFetch, you can either inject data directly into the DOM or handle it pr
 
 ## 🖼️ Demo
 
-![LazyFetch Demo](https://your-demo-gif-url-here.gif)  
-<!-- Replace the link with a short GIF showing LazyFetch in action with a button + result -->
+
 
 ![Demo](./public/GIF.gif)
 
