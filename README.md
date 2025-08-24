@@ -133,8 +133,12 @@ I’m open to ideas, improvements, and collaborations!
 
 **Marcos** – Web developer passionate about clean, functional code.
 
-- 📫 Contact: [linkedin.com/in/your-link](https://linkedin.com/in/your-link)
-- 🌐 Portfolio: [your-portfolio.dev](https://your-portfolio.dev)
+<a href="https://www.linkedin.com/in/frontend-react-devops/">
+  <img src="https://img.shields.io/badge/LinkedIn-%230077B5?logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+
+
+
 
 ⭐ Thanks for checking out **LazyFetch**!
 
