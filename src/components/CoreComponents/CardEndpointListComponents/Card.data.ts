@@ -6,7 +6,7 @@ export const endpointsData = [
     endpoint: "/jokes/random",
     description: "You get a toke inspired in Chuck Norris:",
     exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
+    requiresApiKey: false,
     hasParams: false,
     key:"Chuck"
   },
@@ -58,128 +58,5 @@ export const endpointsData = [
     hasParams: false,
      key:"Numbers"
   },
-  {
-    id: "4",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "4. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: false,
-    hasParams: false,
-     key:"Chuck"
-  },
-  {
-    id: "5",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "5. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
-    hasParams: true,
-     key:"Chuck"
-  },
-  {
-    id: "6",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "6. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
-    hasParams: false,
-     key:"Chuck"
-  },
-  {
-    id: "7",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "7. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
-    hasParams: false,
-     key:"Chuck"
-  },
-  {
-    id: "8",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "8. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: false,
-    hasParams: false,
-     key:"Chuck"
-  },
-  {
-    id: "9",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "9. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
-    hasParams: true,
-     key:"Chuck"
-  },
-  {
-    id: "10",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "10. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: false,
-    hasParams: true,
-     key:"Chuck"
-  },
-  {
-    id: "11",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "11. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
-    hasParams: false,
-     key:"Genio"
-  },
-  {
-    id: "12",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "12. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
-    hasParams: true,
-     key:"Chuck"
-  },
-  {
-    id: "13",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "13. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: true,
-    hasParams: false,
-     key:"Chuck"
-  },
-  {
-    id: "14",
-    image: "/cards/chuck.jpg",
-    baseUrl: "https://api.chucknorris.io",
-    endpoint: "/jokes/random",
-    description: "14. You get a joke inspired in Chuck Norris:",
-    exampleData: `"dylan hallmark beat Chuck Norris up"`,
-    requiresApiKey: false,
-    hasParams: false,
-     key:"Chuck"
-  },
  
-
-
 ];
